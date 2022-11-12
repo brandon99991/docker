@@ -11,3 +11,4 @@ wildfly/wildfly18/mnt/*
 wildfly/wildfly18/apphome/*
 wildfly/wildfly18/binary/*
 awxDocker/*
+*.7z
