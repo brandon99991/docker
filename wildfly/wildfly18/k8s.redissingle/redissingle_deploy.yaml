@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: wildfly18-redis-single
+  name: wildfly18-redis-single
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: wildfly18-redis-single
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: wildfly18-redis-single
+    spec:
+      containers:
+      - image: brandon9999/wildfly18jdk8:latest
+        name: wildfly18-redis-single
+        volumeMounts:
+        - mountPath: /opt/jboss/wildfly/bin
+          name: nfs-volume01
+        - mountPath: /opt/jboss/wildfly/tmp
+          name: nfs-volume02
+        ports:
+        - containerPort: 8080
+        resources: {}
+      volumes:
+      - name: nfs-volume01
+        nfs:
+          server: 192.168.35.210
+          path: /home/nfs/wildfly18_redissingle/bin
+          readOnly: false
+      - name: nfs-volume02
+        nfs:
+          server: 192.168.35.210
+          path: /home/nfs/wildfly18_redissingle/tmp
+          readOnly: false  
+status: {}
