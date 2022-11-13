@@ -3,27 +3,27 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    run: tomcat9-redis
-  name: tomcat9-redis
+    run: wildfly18-redis
+  name: wildfly18-redis
 spec:
   replicas: 1
   selector:
     matchLabels:
-      run: tomcat9-redis
+      run: wildfly18-redis
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        run: tomcat9-redis
+        run: wildfly18-redis
     spec:
       containers:
-      - image: brandon9999/tomcat9jdk8
-        name: tomcat9-redis
+      - image: brandon9999/wildfly18jdk8:latest
+        name: wildfly18-redis
         volumeMounts:
-        - mountPath: /usr/local/tomcat/webapps
+        - mountPath: /opt/jboss/wildfly/bin
           name: nfs-volume01
-        - mountPath: /usr/local/tomcat/conf
+        - mountPath: /opt/jboss/wildfly/tmp
           name: nfs-volume02
         ports:
         - containerPort: 8080
@@ -32,9 +32,11 @@ spec:
       - name: nfs-volume01
         nfs:
           server: 192.168.35.210
-          path: /home/nfs/tomcat9/webapps
+          path: /home/nfs/wildfly18_redis/bin
+          readOnly: false
       - name: nfs-volume02
         nfs:
           server: 192.168.35.210
-          path: /home/nfs/tomcat9/conf        
+          path: /home/nfs/wildfly18_redis/tmp
+          readOnly: false  
 status: {}

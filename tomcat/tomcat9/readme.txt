@@ -33,7 +33,11 @@ tomcat9                        sample1.0        3e30a021ce81   About a minute ag
 4) docker 실행
 $ sudo docker run -d --name tomcat9jdk8 --network host -v '/mnt2/workspace/docker/tomcat/tomcat9/mnt/webapps:/usr/local/tomcat/webapps' -v '/mnt2/workspace/docker/tomcat/tomcat9/mnt/conf:/usr/local/tomcat/conf' -v '/mnt2/workspace/docker/tomcat/tomcat9/mnt/logs:/usr/local/tomcat/logs' -v '/mnt2/workspace/docker/tomcat/tomcat9/mnt/bin:/usr/local/tomcat/bin' tomcat9jdk8
 
+
 $ sudo docker run -d --privileged --name tomcat9jdk8 -p 18080:8080 -p 10022:22 -e container=docker -v '/mnt2/workspace/docker/tomcat/tomcat9/mnt/webapps:/usr/local/tomcat/webapps' -v '/mnt2/workspace/docker/tomcat/tomcat9/mnt/conf:/usr/local/tomcat/conf' -v '/mnt2/workspace/docker/tomcat/tomcat9/mnt/logs:/usr/local/tomcat/logs' -v '/mnt2/workspace/docker/tomcat/tomcat9/mnt/bin:/usr/local/tomcat/bin' -v /sys/fs/cgroup:/sys/fs/cgroup tomcat9jdk8
+
+
+sudo docker run --add-host host.docker.internal:host-gateway --privileged --name tomcat9jdk8 -itd -p 10022:22 -p 18080:8080 -e container=docker -v /sys/fs/cgroup:/sys/fs/cgroup tomcat9jdk8 /usr/sbin/init
 
 
 *-------------------------------------
@@ -68,6 +72,15 @@ $ docker push brandon9999/tomcat9jdk8
 
 8) K8S Pod생성 (only 테스트 / 아래 deploy로 진행할 것)
 $ kubectl run redistest01 --image=brandon9999/tomcat9jdk8
+
+*-----------------------------
+# NFS 생성 참고
+https://www.notion.so/brandon9999/NFS-Storage-3d874e767f7945f6b7ecf5cc36630c0f#878832a1c78041e997fa7d05ec22c760
+
+
+$ cat /etc/exports
+*-----------------------------
+
 
 9) k8s에서 사용할 NFS생성 
    NFS서버 : master서버 (192.168.35.210)

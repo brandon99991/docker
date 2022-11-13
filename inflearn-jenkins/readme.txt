@@ -18,7 +18,7 @@ https://github.com/jenkinsci/docker
 
   $ cd /mnt/c/DevWorkSpace/DOCKER/inflearn
   $ mkdir jenkins_home
-  $ docker run -d -p 8080:8080 -p 50000:50000 --name jenkins-server --restart=on-failure -v /mnt/c/DevWorkSpace/DOCKER/inflearn-jenkins/jenkins_home:/var/jenkins_home/ jenkins/jenkins:lts-jdk11
+  $ docker run -d -p 8080:8080 -p 50000:50000 --name jenkins-server --restart=on-failure -v /mnt2/workspace/docker/inflearn-jenkins/jenkins_home:/var/jenkins_home/ jenkins/jenkins:lts-jdk11
 
 ● Jenkins 패스워드 확인 (1)
     user01@desk01:/mnt/c/DevWorkSpace/DOCKER/inflearn-jenkins$ docker ps
