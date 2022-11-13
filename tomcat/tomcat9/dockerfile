@@ -153,3 +153,11 @@ RUN set -eux; \
 
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
+
+# Openssh-sever 설치 // 2022.11.03
+RUN apt update && apt install  openssh-server sudo -y
+RUN useradd -rm -d /home/ubuntu -s /bin/bash -g root -G sudo -u 1000 user01 
+RUN  echo 'user01:q' | chpasswd
+RUN service ssh start
+EXPOSE 22
+CMD ["/usr/sbin/sshd","-D"]
