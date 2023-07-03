@@ -1,5 +1,5 @@
-inflearn-jenkins/apache-tomcat-9.0.65/*
-inflearn-jenkins/git/*
-inflearn-jenkins/jdk-11.0.2/*
-inflearn-jenkins/jenkins_home/*
-inflearn-jenkins/temp/*
+./apache-tomcat-9.0.65/*
+./git/*
+./jdk-11.0.2/*
+./jenkins_home/*
+./temp/*
