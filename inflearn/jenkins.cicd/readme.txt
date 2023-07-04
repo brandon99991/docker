@@ -5,9 +5,9 @@
 
 ● 공식 Jenkins Docker image : https://github.com/jenkinsci/docker
 
-● 작업디렉토리 : /home/user01/workspace/docker/inflearn/jenkins.cicd/dev
+● 작업디렉토리 : /mnt/c/DevWorkSpace/vscode/docker/inflearn/jenkins.cicd/dev
 
-● Local JENKINS HOME디렉토리 : /home/user01/workspace/docker/inflearn/jenkins.cicd/dev/jenkins_home
+● Local JENKINS HOME디렉토리 : /mnt/c/DevWorkSpace/vscode/docker/inflearn/jenkins.cicd/dev/jenkins_home
                                 => Jenkins실행을 하면, /var/jenkins_home/ 디렉토리로 마운트됨. 
 
 ● 설치 참고 : https://www.notion.so/brandon9999/1-DevOps-CI-CD-4767edd962584875a21ef5e434e25b97
