@@ -2,9 +2,9 @@
 
 ▣ 섹션1. DevOps와 CI/CD의 이해
 
-■ Jenkins 설치 및 설정
-https://hub.docker.com
-https://github.com/jenkinsci/docker
+■ Jenkins 설치
+
+● 공식 Jenkins Docker image : https://github.com/jenkinsci/docker
 
 ● 작업디렉토리 : /home/user01/workspace/docker/inflearn/jenkins.cicd/dev
 
