@@ -8,26 +8,7 @@ https://github.com/jenkinsci/docker
 
 ● 작업디렉토리 : /home/user01/workspace/docker/inflearn/jenkins.cicd/dev
 
-● Docker이미지 다운로드
-  $ docker pull jenkins/jenkins
-
-● Jenkins 실행 (항상 실행시에 --restart=on-failure 옵션 주면 됨)
-  $ docker run -d -p 8080:8080 -p 50000:50000 --name jenkins-server -v /home/user01/workspace/docker/inflearn/jenkins.cicd/dev/jenkins_home:/var/jenkins_home/ jenkins/jenkins:lts-jdk11
-
-● Jenkins 패스워드 확인
-    $ docker ps
-    $ ls
-    bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
-    $ cd /var/jenkins_home
-    $ cd jenkins_home
-    $ ls
-    config.xml               hudson.model.UpdateCenter.xml  jenkins.telemetry.Correlator.xml  nodeMonitors.xml  plugins     secret.key.not-so-secret  userContent  war
-    copy_reference_file.log  identity.key.enc               jobs                              nodes             secret.key  secrets                   users
-    $ cd secrets
-    $ ls
-    initialAdminPassword  jenkins.model.Jenkins.crumbSalt  master.key  org.jenkinsci.main.modules.instance_identity.InstanceIdentity.KEY
-    $ cat initialAdminPassword
-    04c4f416cce64f2899cba85cbdee1557
+● 설치 참고 : https://www.notion.so/brandon9999/1-DevOps-CI-CD-4767edd962584875a21ef5e434e25b97
 
 ● Jenkins Dokcer 접속
   $ docker exec -it jenkins-server sh
