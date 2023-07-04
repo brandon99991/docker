@@ -14,7 +14,7 @@
   $ docker ps -a  
   ---------------------------------------------------------------
 CONTAINER ID   IMAGE                        COMMAND                  CREATED         STATUS                      PORTS                                                                                      NAMES
-7046e62a0397   4bd7f50358ef                 "echo hello3"            2 minutes ago   Exited (0) 2 minutes ago      
+f09c69857a37   brandon9999/hellodocker      "echo hello3"            2 minutes ago   Exited (0) 2 minutes ago
 ...<생략>...
   ---------------------------------------------------------------
 
@@ -22,4 +22,4 @@ CONTAINER ID   IMAGE                        COMMAND                  CREATED    
   $ docker push brandon9999/hellodocker:latest
 
 6) 실행
-  $ docker run -it brandon9999/hellodocker
+  $ docker run -it brandon9999/hellodocker:latest
