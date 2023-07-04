@@ -1,0 +1,14 @@
+inflearn-jenkins/apache-tomcat-9.0.65/*
+inflearn-jenkins/git/*
+inflearn-jenkins/jdk-11.0.2/*
+inflearn-jenkins/jenkins_home/*
+inflearn-jenkins/temp/*
+tomcat/tomcat9/mnt/*
+tomcat/tomcat9/apphome/*
+tomcat/tomcat9/binary/*
+wildfly/wildfly18/mnt/*
+wildfly/wildfly18/apphome/*
+wildfly/wildfly18/binary/*
+awxDocker/*
+test/
+*.7z
