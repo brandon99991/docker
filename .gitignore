@@ -1,4 +1,5 @@
 only.local/*
+no.git/*
 inflearn-jenkins/apache-tomcat-9.0.65/*
 inflearn-jenkins/git/*
 inflearn-jenkins/jdk-11.0.2/*
