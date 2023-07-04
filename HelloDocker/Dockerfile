@@ -7,6 +7,6 @@ FROM alpine
 
 # 컨테이너 시작시 실행 될 명령어(실행파일 or 쉘스크립트)를 명시해 준다.
 #CMD ["executable"]
-CMD ["echo", "hello"]
+CMD ["echo", "hello3"]
 
 
