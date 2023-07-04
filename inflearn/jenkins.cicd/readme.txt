@@ -6,13 +6,13 @@
 https://hub.docker.com
 https://github.com/jenkinsci/docker
 
-● 작업디렉토리 : /home/user01/workspace/DOCKER/inflearn-jenkins
+● 작업디렉토리 : /home/user01/workspace/docker/inflearn/jenkins.cicd/dev
 
 ● Docker이미지 다운로드
   $ docker pull jenkins/jenkins
 
 ● Jenkins 실행 (항상 실행시에 --restart=on-failure 옵션 주면 됨)
-  $ docker run -d -p 8080:8080 -p 50000:50000 --name jenkins-server -v /home/user01/workspace/docker/inflearn-jenkins/jenkins_home:/var/jenkins_home/ jenkins/jenkins:lts-jdk11
+  $ docker run -d -p 8080:8080 -p 50000:50000 --name jenkins-server -v /home/user01/workspace/docker/inflearn/jenkins.cicd/dev/jenkins_home:/var/jenkins_home/ jenkins/jenkins:lts-jdk11
 
 ● Jenkins 패스워드 확인
     $ docker ps
