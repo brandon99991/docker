@@ -16,21 +16,23 @@ $ git commit -m "message ~~~"
 $ git push -u origin master
 ```
 
+● 도커 서비스 기동 및 확인인
+```
+$ systemctl enable docker  
+$ systemctl status docker  
+$ systemctl start docker  
+
+or 
+
+$ sudo service docker start
+$ sudo service docker restart  // 재기동
+
+// 도커 엔진 확인
+$ sudo docker info
+```
 
 
-● systemctl enable docker  
-● systemctl status docker  
-● systemctl start docker  
 
-
-● docker 기동
-  $ sudo service docker start
-
-● docker 재기동
-  $ sudo service docker restart
-
-● docker 정보
-  $ sudo docker info
 
 ● docker 네트웍 정보
   $ docker network ls
