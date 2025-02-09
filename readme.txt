@@ -1,4 +1,7 @@
 
+* 참고 (local directory)
+  /home/user01/repository/github.brandon99991/docker
+
 ▣ ■ ●
 ==============================
 ■ Docker 기본...
