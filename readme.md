@@ -2,7 +2,7 @@
 
 ▣ ■ ●
 ==============================
-■ Docker 기본...
+■ Docker Basic
 ==============================
 
 ● 참고
@@ -34,17 +34,16 @@ $ sudo docker info
 ● docker 네트웍 정보
 ```
 $ docker network ls
-  user01@desk01:/etc/default$ docker network ls
-  NETWORK ID     NAME                       DRIVER    SCOPE
-  a8f9e3b876ff   bridge                     bridge    local
-  ee617b25454c   docker-react-app_default   bridge    local
-  47b5456e2020   host                       host      local
-  9a1cc22362c6   none                       null      local  
+user01@desk01:/etc/default$ docker network ls
+NETWORK ID     NAME      DRIVER    SCOPE
+15c91d5c8b09   bridge    bridge    local
+47b5456e2020   host      host      local
+9a1cc22362c6   none      null      local 
 
 $ docker network inspect bridge
 ```
 
-● docker login (Docker Hub의 계정으로 로그인)
+● docker login (DockerHub 로그인)
 ```
 $ docker login
 ```
