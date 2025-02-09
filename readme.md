@@ -7,10 +7,18 @@
 
 ● 참고
 ```
-// local directory :
+// local directory
 /home/user01/repository/github.brandon99991/docker
 
-// github push 명령 :
+// local git 설정
+$ git config --global user.name "brandon99991"
+$ git config --global user.email "induomo2@gmail.com"
+$ git remote set-url origin https://토큰@github.com/brandon99991/docker.git
+
+// Remote git 확인
+$ git remote -v
+
+// github push 명령
 $ git add .
 $ git commit -m "message ~~~"
 $ git push -u origin master
@@ -46,6 +54,9 @@ $ docker network inspect bridge
 ● docker login (DockerHub 로그인)
 ```
 $ docker login
+
+// dockerhub
+brandon9999 (induomo@gmail.com) / ???
 ```
 
 ● docker 빌드 및 실행(1)
