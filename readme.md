@@ -4,14 +4,15 @@
 ==============================
 ■ Docker 기본...
 ==============================
+● 참고
 ```
-* 참고 (local directory)
+* local directory :
 /home/user01/repository/github.brandon99991/docker
 
-* 참고 (github push)
-git add .
-git commit -m "message ~~~"
-git push -u origin master
+* github push 명령 :
+$ git add .
+$ git commit -m "message ~~~"
+$ git push -u origin master
 ```
 
 
