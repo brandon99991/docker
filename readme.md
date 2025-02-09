@@ -11,9 +11,10 @@ git push -u origin master
 ==============================
 ■ Docker 기본...
 ==============================
-● systemctl enable docker
-● systemctl status docker
-● systemctl start docker
+● systemctl enable docker  
+● systemctl status docker  
+● systemctl start docker  
+
 
 ● docker 기동
   $ sudo service docker start
