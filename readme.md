@@ -1,6 +1,11 @@
 
 * 참고 (local directory)
-  /home/user01/repository/github.brandon99991/docker
+/home/user01/repository/github.brandon99991/docker
+
+* 참고 (github push)
+git add .
+git commit -m "message ~~~"
+git push -u origin master
 
 ▣ ■ ●
 ==============================
