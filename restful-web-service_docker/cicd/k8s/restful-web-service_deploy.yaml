@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: restful-web-service
+  name: restful-web-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: restful-web-service
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: restful-web-service
+    spec:
+      containers:
+      - image: brandon9999/restful-web-service
+        name: restful-web-service
+        ports:
+        - containerPort: 9001
+        resources: {}
+status: {}
