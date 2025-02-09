@@ -16,7 +16,7 @@ $ git commit -m "message ~~~"
 $ git push -u origin master
 ```
 
-● 도커 서비스 기동 및 확인인
+● 도커 서비스 기동 및 확인
 ```
 $ systemctl enable docker  
 $ systemctl status docker  
@@ -31,20 +31,18 @@ $ sudo service docker restart  // 재기동
 $ sudo docker info
 ```
 
-
-
-
 ● docker 네트웍 정보
-  $ docker network ls
-    user01@desk01:/etc/default$ docker network ls
-    NETWORK ID     NAME                       DRIVER    SCOPE
-    a8f9e3b876ff   bridge                     bridge    local
-    ee617b25454c   docker-react-app_default   bridge    local
-    47b5456e2020   host                       host      local
-    9a1cc22362c6   none                       null      local  
+```
+$ docker network ls
+  user01@desk01:/etc/default$ docker network ls
+  NETWORK ID     NAME                       DRIVER    SCOPE
+  a8f9e3b876ff   bridge                     bridge    local
+  ee617b25454c   docker-react-app_default   bridge    local
+  47b5456e2020   host                       host      local
+  9a1cc22362c6   none                       null      local  
 
-● Docker 네트웍 상세보기
-  $ docker network inspect bridge
+$ docker network inspect bridge
+```
 
 ● docker login (Docker Hub의 계정으로 로그인)
   $ docker login
