@@ -7,10 +7,10 @@
 
 ● 참고
 ```
-* local directory :
+// local directory :
 /home/user01/repository/github.brandon99991/docker
 
-* github push 명령 :
+// github push 명령 :
 $ git add .
 $ git commit -m "message ~~~"
 $ git push -u origin master
