@@ -1,4 +1,10 @@
 
+
+▣ ■ ●
+==============================
+■ Docker 기본...
+==============================
+```
 * 참고 (local directory)
 /home/user01/repository/github.brandon99991/docker
 
@@ -6,11 +12,10 @@
 git add .
 git commit -m "message ~~~"
 git push -u origin master
+```
 
-▣ ■ ●
-==============================
-■ Docker 기본...
-==============================
+
+
 ● systemctl enable docker  
 ● systemctl status docker  
 ● systemctl start docker  
