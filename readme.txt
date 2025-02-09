@@ -9,7 +9,7 @@ sudo git push -u origin master
 
 ▣ ■ ●
 ==============================
-■ Docker 기본...
+# ■ Docker 기본...
 ==============================
 systemctl enable docker  
 systemctl status docker  
