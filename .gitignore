@@ -4,7 +4,7 @@ test/
 *.7z
 *.exe
 *.tar
-*.jar
+#*.jar
 inflearn/jenkins.cicd/dev
 inflearn/jenkins.cicd/binary
 inflearn-jenkins/apache-tomcat-9.0.65/*
