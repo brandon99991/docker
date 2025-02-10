@@ -5,6 +5,8 @@ test/
 *.exe
 *.tar
 *.jar
+restful-web-service/*
+restful-web-service_docker/*
 inflearn/jenkins.cicd/dev
 inflearn/jenkins.cicd/binary
 inflearn-jenkins/apache-tomcat-9.0.65/*
