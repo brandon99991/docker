@@ -5,7 +5,7 @@ test/
 *.exe
 *.tar
 *.jar
-restful-web-service/*
+#restful-web-service/*
 restful-web-service_docker/*
 inflearn/jenkins.cicd/dev
 inflearn/jenkins.cicd/binary
